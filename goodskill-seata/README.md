@@ -11,4 +11,5 @@
   ```
   可参考Seata官方Nacos配置文档:[http://seata.io/zh-cn/docs/user/configuration/nacos.html](http://seata.io/zh-cn/docs/user/configuration/nacos.html)
 - 按顺序启动GoodsKillServiceApplication、GoodskillSeataApplication（注意开启seata事务，配置seata.enabled=true,seata.enable-auto-data-source-proxy=true），控制台不报error则启动成功
+- nacos配置中心中导入seata相关配置``nacos_config_seata.zip``(文件在doc/docker/nacos目录下)
 - 浏览器访问:http://localhost:8080/test ，即可触发测试用例，可根据需要自行增加异常，测试分布式事务回滚情况
